@@ -15,7 +15,9 @@ The project uses sample data sourced from Kaggle. You can download the dataset f
 I have provided the data inside the `data` folder within the project directory with some modifications to support the transformation.
 
 ## How to Run
-- First you have to import data in your postgres database local machine, then you have to registered the airflow connection called source_postgre
-- Second you need to add another database and registered the db in the airflow connection called dest_postgre
+- First you have to import data in your postgres database local machine,
 - Run the docker-compose --build
 - Visit your http://localhost:8080/
+- Registered the airflow connection called source_postgre
+- Next step need to add another database and registered the db in the airflow connection called dest_postgre
+- Run the DAG tasks
