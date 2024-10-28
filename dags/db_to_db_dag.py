@@ -48,15 +48,15 @@ def load(df):
         if not table_exists:
             create_table_query = """
             CREATE TABLE IF NOT EXISTS sheetsummaries (
-                fund_code varchar(8),
+                fund_code int,
                 receivership varchar(32),
                 "year" int4,
                 quarter varchar(2),
                 failure_date date,
                 cash_and_investments int4,
-                due_from_fdic_corp_and_receivables varchar(4),
-                assets_in_liquidation varchar,
-                estimated_loss_on_assets_in_liquidation varchar,
+                due_from_fdic_corp_and_receivables int,
+                assets_in_liquidation int,
+                estimated_loss_on_assets_in_liquidation int,
                 total_assets int4
             );
             """
