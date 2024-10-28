@@ -1,0 +1,5 @@
+airflow/logs/*
+# .DS_Store
+.DS_Store
+.logs/*
+dags/__pycache__/*
