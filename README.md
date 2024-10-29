@@ -16,7 +16,7 @@ I have provided the data inside the `data` folder within the project directory w
 
 ## How to Run
 - First you have to import data in your postgres database local machine,
-- Run the docker-compose --build
+- Run the docker-compose up --build
 - Visit your http://localhost:8080/
 - Registered the airflow connection called source_postgre
 - Next step need to add another database and registered the db in the airflow connection called dest_postgre
